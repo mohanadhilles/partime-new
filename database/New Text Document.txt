@@ -1,0 +1,14 @@
+ALTER TABLE `categories` ADD `sort_order` INT NULL DEFAULT NULL AFTER `count_jobs`; 
+ALTER TABLE `categories` ADD `show_in_jobs` BOOLEAN NULL DEFAULT NULL AFTER `updated_at`, ADD `show_in_home` BOOLEAN NULL DEFAULT NULL AFTER `show_in_jobs`, ADD `count_jobs` INT NULL DEFAULT '1' AFTER `show_in_home`;
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE `roles` ADD `ar_name` VARCHAR(200) NULL DEFAULT NULL AFTER `name`; 
