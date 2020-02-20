@@ -16,6 +16,7 @@ class AddShowInHomeToCategoriesTable extends Migration
         Schema::table('categories', function (Blueprint $table) {
             $table->integer('show_in_home')->default(0);
             $table->integer('count_jobs')->default(0);
+            $table->integer('show_in_jobs')->default(0);
         });
     }
 
